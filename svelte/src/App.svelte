@@ -1,0 +1,37 @@
+<script>
+	import HeaderBar from "./HeaderBar.svelte";
+	import Wheel from "./Wheel.svelte";
+	import Radar from "./Radar.svelte";
+	import Preview from "./Preview.svelte";
+</script>
+<HeaderBar></HeaderBar>
+<main>
+	<div class="left">
+		<Preview></Preview>
+		<Radar></Radar> 
+	</div>
+	<div class="right">
+		<Wheel></Wheel>
+	</div>
+</main>
+
+<style>
+	main {
+		display: flex;
+		/* //justify-content: space-between; */
+		overflow: hidden;
+	}
+	.left {
+		border: 1px solid lime;
+		flex-grow: 1;
+		max-width: 40%;
+		height: calc(97vh - 4rem);
+	}
+	.right {
+		border: 1px solid blueviolet;
+		flex-grow: 1;
+		height: calc(97vh - 4rem);
+		max-width:60%;
+	}
+	
+</style>

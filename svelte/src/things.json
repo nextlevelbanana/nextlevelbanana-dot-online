@@ -1,0 +1,32 @@
+{"things": [{
+    "name": "TWITTER",
+    "category": "socials",
+    "link": "https://twitter.com/nextlevelbanana",
+    "data": [
+        {
+            "name": "twitter",
+            "local": 4,
+            "meat": 0,
+            "joke": 3,
+            "word": 3,
+            "weird":2
+        }
+    ]
+    },
+    {
+    "name": "PATREON",
+    "category": "socials",
+    "link": "https://patreon.com/nextlevelbanana",
+    "data": [
+        {
+            "name": "patreon",
+            "local": 4,
+            "meat": 3,
+            "joke": 3,
+            "word": 1,
+            "weird":2
+        }
+    ]
+    }
+]
+}
