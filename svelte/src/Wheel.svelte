@@ -2,17 +2,17 @@
     import {flip} from "svelte/animate";
     import { selected } from './stores.js';
     import json from "./things.json";
+    import RainbowText from "./RainbowText.svelte";
    
     const doRandom = () => {
-        const idx = Math.floor(Math.random()* (items.length -2)); //don't want random or roulette
-        console.log(idx)
+        const idx = Math.floor(Math.random()* (items.length -2))+2; //don't want random or roulette
         handleClick(items[idx]);
     }
     const doRoulette = () => {
         console.log("ROULOOO")
-        const num = Math.floor(Math.random() * 100);
-        console.log(num)
-        handleKeypress({keyCode:39})
+        const num = Math.floor(Math.random() * 50);
+        if (num < 2) num = 2;
+        // handleKeypress({keyCode:39})
         let i = 0;
         let interval = 60;
         var doRou = setInterval(() => {
@@ -23,83 +23,47 @@
         
     }
 
-    const items = [
-        {id: 0, name: "Thing One", category: "game", data: [{
-            name: "thing one",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 1, name: "Thing Two", category: "game", data: [{
-            name: "thing two",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 2,name: "Thing Three", link: "http://www.twitter.com/levelbanan", category: "game", data: [{
-            name: "thing three",
-            joke: 3,
-            local: 5,
-            word: 3,
-            meat: 1,
-            weird: 2
-        }]},
-        {id: 3,name: "Thing Four", link: "http://www.twitter.com/nextlevelbanana", category: "game", data: [{
-            name: "thing four",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 4,name: "Thing Five", category: "talk", data: [{
-            name: "thing four",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 5,name: "Thing Six", category: "talk", data: [{
-            name: "thing four",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 6,name: "Thing Seven", category: "link", data: [{
-            name: "thing four",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 7, name: "RANDOM", category: "extra", handler: doRandom, data: [{
-            name: "thing four",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]},
-        {id: 8, name: "ROULETTE", category: "extra", handler: doRoulette, data: [{
-            name: "thing four",
-            joke: 2,
-            local: 1,
-            word: 3,
-            meat: 4,
-            weird: 5
-        }]}
-    ]
+    let items = [];
 
-    //todo: parse things from json
-    //then add random and roulette manually, so to directly add their handlers
+    items.push({
+        id: items.length,
+        name: "RANDOM",
+        category: "extra",
+        handler: doRandom, 
+        data: [{
+            name: "random",
+            JOKE: 2,
+            CASCADIA: 1,
+            LINGUISTICS: 3,
+            MEATSPACE: 4,
+            WEIRD: 5
+        }]
+    });
+
+    items.push({
+        id: items.length,
+        name: "ROULETTE",
+        category: "extra",
+        handler: doRoulette,
+        data: [{
+            name: "roulette",
+            JOKE: 5,
+            CASCADIA: 3,
+            LINGUISTICS: 3,
+            MEATSPACE: 3,
+            WEIRD: 5
+        }]
+    });
+
+    items = items.concat(json.things.sort((a,b) => {
+            if (a.category !== b.category)
+                return (a.category < b.category) ? -1 : (a.category > b.category) ? 1 : 0;
+            else 
+                return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
+        }
+        ).map((thing, i) => ({...thing, id: i+2})));
+
+
     //todo: programmatically sort things, adding IDs
     //todo: add preview pics and sound for things
 
@@ -108,7 +72,6 @@
 
     $: $selected = displayedItems[3];
 
-    
 
     const getOffset = index => {
         const num = Math.abs(index - 3);
@@ -173,7 +136,14 @@
 <div class="wheel">
     {#each displayedItems as item, idx (item.id)}
         <div on:click={handleClick(item)} animate:flip="{{duration:150, ease: "sine"}}" class={ `item ${getOffset(idx)} ${item.category}`}>
+            {#if item.name == "RANDOM" || item.name == "ROULETTE"}
+                <RainbowText text={item.name} />
+            {:else}
             <div class="name">{item.name}</div>
+            {/if}
+            {#if item.description}
+            <div class="description">{item.description}</div>
+            {/if}
         </div>
        
     {/each}
@@ -189,51 +159,75 @@
     }
    
     .item {
-        background: linear-gradient(65deg, yellowgreen, yellow);
-        border:1px solid black;
+        align-items: flex-start;
+        background: linear-gradient(65deg, teal 30%, cyan);
+        border: 2px solid chartreuse;
+        border-bottom-color: lime;
         border-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         font-size: 3em;
         height: 16%;
         min-height: 16%;
-        border-radius: 8px 0 0 8px;
+        border-radius: 18px 0 0 5px;
+        transform: matrix(1, 0, -0.1, 1, 10, 0);
+        overflow: hidden;
+        box-shadow: -1px -1px 10px midnightblue;
+        margin-bottom: 8px;
+    }
 
-
+    .description {
+        font-size: 1.25rem;
     }
 
     .item.zero:hover {
         cursor: pointer;
     }
 
-    .name {
-        padding: 1rem 0 0 1rem;
+    .name, .description {
+        padding-left: 9rem;
     }
 
-    .game {
-        color: white;
+    .games {
+        color: chartreuse;
     }
-    .talk {
-        color: cyan;
+    .talks {
+        color: red;
     }
-    .link {
+    .socials {
         color: yellow;
     }
     .extra {
-       color: red;
+        color: transparent;
+        font-family: "NES2-Regular";
+    }
+    .tools {
+        color: cyan;
+    }
+    .orgs {
+        color: violet;
     }
 
     .zero {
-        border: 15px solid white;
-        border-radius: 8px 0 0 8px;
-        border-right: 0;
+        border-style: solid;
+        border-top-color: chartreuse;
+        border-bottom-color: lime;
+        border-width: 10px 0 10px 10px;
+        filter: brightness(1.0);
+        -webkit-text-stroke: 1px white;
     }
     .one {
-        margin-left: 2rem;
+        margin-left: 4rem;
+        filter: brightness(0.9);
     }
     .two {
-        margin-left: 4rem;
+        margin-left: 8rem;
+        filter: brightness(0.7);
     }
     .three {
-        margin-left: 6rem;
+        margin-left: 12rem;
+        filter: brightness(0.5);
     }
 
 </style>

@@ -1,6 +1,7 @@
 import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
+import image from '@rollup/plugin-image';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
@@ -39,6 +40,7 @@ export default {
 	},
 	plugins: [
 		json(),
+		image(),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production

@@ -1,32 +1,466 @@
-{"things": [{
-    "name": "TWITTER",
+{
+    "things": [
+        {
+            "name": "TWITTER",
+            "description": "@nextlevelbanana",
+            "category": "socials",
+            "link": "https://twitter.com/nextlevelbanana",
+            "img": "assets/unicorn.jpg",
+            "data": [
+                {
+                    "name": "twitter",
+                    "CASCADIA": 3,
+                    "MEATSPACE": 3,
+                    "JOKE": 3,
+                    "LINGUISTICS": 3,
+                    "WEIRD": 2
+                }
+            ]
+        },
+    {
+    "name": "PATREON",
+    "description": "patreon.com/nextlevelbanana",
     "category": "socials",
-    "link": "https://twitter.com/nextlevelbanana",
+    "link": "https://patreon.com/nextlevelbanana",
+    "img": "assets/bananabanner.png",
     "data": [
         {
-            "name": "twitter",
-            "local": 4,
-            "meat": 0,
-            "joke": 3,
-            "word": 3,
-            "weird":2
+            "name": "patreon",
+            "CASCADIA": 3,
+            "MEATSPACE": 4,
+            "JOKE": 4,
+            "LINGUISTICS": 1,
+            "WEIRD": 2
         }
     ]
     },
     {
-    "name": "PATREON",
-    "category": "socials",
-    "link": "https://patreon.com/nextlevelbanana",
-    "data": [
-        {
-            "name": "patreon",
-            "local": 4,
-            "meat": 3,
-            "joke": 3,
-            "word": 1,
-            "weird":2
-        }
-    ]
+        "name": "ITCH",
+        "description" : "nextlevelbanana.itch.io",
+        "category": "socials",
+        "link": "https://nextlevelbanana.itch.io",
+        "img": "assets/bananabanner.png",
+        "data": [
+            {
+                "name": "itch",
+                "CASCADIA": 3,
+                "MEATSPACE": 2,
+                "JOKE": 1,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "LIVE",
+        "description": "nextlevelbanana.live",
+        "category": "socials",
+        "link": "http://nextlevelbanana.live",
+        "data": [
+            {
+                "name": "live",
+                "CASCADIA": 3,
+                "MEATSPACE": 5,
+                "JOKE": 4,
+                "LINGUISTICS": 1,
+                "WEIRD": 4
+            }
+        ]
+    },
+    {
+        "name": "Requiem for a Meatgame",
+        "description": "PIGSquad Game Funeral 2020",
+        "category": "talks",
+        "link": "NEED TO UPLOAD",
+        "data": [
+            {
+                "name": "funeral",
+                "CASCADIA": 3,
+                "MEATSPACE": 5,
+                "JOKE": 3,
+                "LINGUISTICS": 0,
+                "WEIRD": 2
+            }
+        ]
+    },
+    {
+        "name": "Jamming in Meatspace",
+        "description": "PIGSquad Talent Talks 2019",
+        "category": "talks",
+        "link": "https://www.youtube.com/watch?v=oBpqlPgFMmo",
+        "data": [
+            {
+                "name": "jammingtalk",
+                "CASCADIA": 1,
+                "MEATSPACE": 5,
+                "JOKE": 2,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "PICO-8 Tweetcarts",
+        "description": "DonutJS 2018",
+        "category": "talks",
+        "link": "https://www.youtube.com/watch?v=VAwY2x-nOXU",
+        "data": [
+            {
+                "name": "tweetcarts",
+                "CASCADIA": 5,
+                "MEATSPACE": 2,
+                "JOKE": 3,
+                "LINGUISTICS": 0,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "Plunge on a Dance Pad",
+        "description": "PIGSquad 10yr",
+        "category": "talks",
+        "link": "https://www.youtube.com/watch?v=1xQ3FqIxkY8",
+        "data": [
+            {
+                "name": "plunge",
+                "CASCADIA": 4,
+                "MEATSPACE": 4,
+                "JOKE": 4,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Creed Fighter",
+        "description": "PICO-8 Holiday Calendar 2019",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/creed-fighter",
+        "img": "assets/creedfighter.gif",
+        "wav": "assets/creed.wav",
+        "data": [
+            {
+                "name": "creedfighter",
+                "CASCADIA": 0,
+                "MEATSPACE": 0,
+                "JOKE": 4,
+                "LINGUISTICS": 0,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "DECO-RAMA",
+        "description": "ft. LIASNYDE🎨",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/deco-rama",
+        "img": "assets/decorama-cover.gif",
+        "wav": "assets/decorama.wav",
+        "data": [
+            {
+                "name": "decorama",
+                "CASCADIA": 0,
+                "MEATSPACE": 0,
+                "JOKE": 2,
+                "LINGUISTICS": 0,
+                "WEIRD": 2
+            }
+        ]
+    },
+    {
+        "name": "Hack At Home",
+        "description": "ft. RUUNE🎨",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/hack-at-home",
+        "img": "assets/hackathome.jpg",
+        "data": [
+            {
+                "name": "hackathome",
+                "CASCADIA": 0,
+                "MEATSPACE": 5,
+                "JOKE": 3,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Inscrutable Instructions",
+        "description": "ft. PFARNACH|CASEYFRANTUM|YORIKV|APRIVEE|AYOLLAND",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/inscrutable-instructions",
+        "img": "assets/inscrutable_players_crop.jpg",
+        "wav": "assets/inscrutable.wav",
+        "data": [
+            {
+                "name": "inscrutable",
+                "CASCADIA": 0,
+                "MEATSPACE": 4,
+                "JOKE": 2,
+                "LINGUISTICS": 5,
+                "WEIRD": 3
+            }
+        ]
+    }
+    ,
+    {
+        "name": "Look Out! (The Vengabus is Coming)",
+        "description": "ft. GRUBER🎵",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/look-out-the-vengabus-is-coming",
+        "img": "assets/bus_3.gif",
+        "wav": "assets/venga.wav",                                                                                                  
+        "data": [
+            {
+                "name": "vengabus",
+                "CASCADIA": 0,
+                "MEATSPACE": 0,
+                "JOKE": 5,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Perfectly Normal Apartment",
+        "description": "ft. HODGE🎵",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/perfectly-normal-apartment",
+        "img": "assets/pnp.gif",
+        "wav": "assets/pnp.wav",
+        "data": [
+            {
+                "name": "perfectlynormalapartment",
+                "CASCADIA": 1,
+                "MEATSPACE": 0,
+                "JOKE": 4,
+                "LINGUISTICS": 0,
+                "WEIRD": 2
+            }
+        ]
+    },
+    {
+        "name": "PixelTown🎃",
+        "description": "",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/pixeltown",
+        "img": "assets/pixeltown_1.gif",
+        "wav": "assets/pixeltown.wav",
+        "data": [
+            {
+                "name": "pixeltown",
+                "CASCADIA": 1,
+                "MEATSPACE": 0,
+                "JOKE": 2,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Pourlandia2P",
+        "description": "🌧🌧🌧",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/pourlandia-2p",
+        "img": "assets/pourlandia2p_3.gif",
+        "data": [
+            {
+                "name": "pourlandia",
+                "CASCADIA": 5,
+                "MEATSPACE": 0,
+                "JOKE": 3,
+                "LINGUISTICS": 0,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "SPES",
+        "description": "",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/spes-supraplanetary-express-system",
+        "img": "assets/pilotpassport.png",
+        "data": [
+            {
+                "name": "spes",
+                "CASCADIA": 0,
+                "MEATSPACE": 5,
+                "JOKE": 1,
+                "LINGUISTICS": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Timespook: Vanport",
+        "description": "ft. JONAPULSE🎙 + CASEYFRANTUM🔉 + PUMODI🎵",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/timespook-vanport",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "timespook",
+                "CASCADIA": 4,
+                "MEATSPACE": 5,
+                "JOKE": 0,
+                "LINGUISTICS": 0,
+                "WEIRD": 5
+            }
+        ]
+    },
+    {
+        "name": "What's New, Pussycat?",
+        "description": "(Dicey Dungeons REMIX) ft. STEVEBLU🎵 + AIR.ARTIST🎨",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/whats-new-pussycat",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "whatsnew",
+                "CASCADIA": 0,
+                "MEATSPACE": 0,
+                "JOKE": 5,
+                "LINGUISTICS": 0,
+                "WEIRD": 0
+            }
+        ]
+    },
+    {
+        "name": "Win Stupid Prizes",
+        "description": "",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/win-stupid-prizes",
+        "img": "assets/wsp.PNG",
+        "data": [
+            {
+                "name": "winstupidprizes",
+                "CASCADIA": 0,
+                "MEATSPACE": 4,
+                "JOKE": 4,
+                "LINGUISTICS": 1,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "Yes, Real Fire!",
+        "description": "",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/yes-real-fire",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "winstupidprizes",
+                "CASCADIA": 2,
+                "MEATSPACE": 5,
+                "JOKE": 1,
+                "LINGUISTICS": 0,
+                "WEIRD": 4
+            }
+        ]
+    },
+    {
+        "name": "Zeitgeist.PPT",
+        "description": "ft...",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/zeitgeist",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "zeitgeist",
+                "CASCADIA": 2,
+                "MEATSPACE": 3,
+                "JOKE": 2,
+                "LINGUISTICS": 0,
+                "WEIRD": 5
+            }
+        ]
+    },
+    {
+        "name": "PIGPlayer",
+        "description": "soundcloud + PIGSquad + streaming",
+        "category": "tools",
+        "link": "https://github.com/nextlevelbanana/PIGPlayer",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "pigplayer",
+                "CASCADIA": 5,
+                "MEATSPACE": 2,
+                "JOKE": 0,
+                "LINGUISTICS": 0,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "Itch Clean Screen",
+        "description": "🧼",
+        "category": "tools",
+        "link": "https://github.com/nextlevelbanana/ItchCleanScreen",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "cleanscreen",
+                "CASCADIA": 0,
+                "MEATSPACE": 1,
+                "JOKE": 0,
+                "LINGUISTICS": 0,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "PIGSquad",
+        "description": "✨lead volunteer✨",
+        "category": "orgs",
+        "link": "https://pigsquad.com",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "pigsquad",
+                "CASCADIA": 5,
+                "MEATSPACE": 5,
+                "JOKE": 0,
+                "LINGUISTICS": 0,
+                "WEIRD": 0
+            }
+        ]
+    },
+    {
+        "name": "Roguelike Celebration",
+        "description": "@..organizer..@",
+        "category": "orgs",
+        "link": "https://roguelike.club",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "rcl",
+                "CASCADIA": 0,
+                "MEATSPACE": 5,
+                "JOKE": 0,
+                "LINGUISTICS": 2,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "DonutJS (HIATUS)",
+        "description": "🍩organizer🍩",
+        "category": "orgs",
+        "link": "https://roguelike.club",
+        "img": "assets/",
+        "data": [
+            {
+                "name": "rcl",
+                "CASCADIA": 0,
+                "MEATSPACE": 5,
+                "JOKE": 0,
+                "LINGUISTICS": 2,
+                "WEIRD": 1
+            }
+        ]
     }
 ]
 }
+

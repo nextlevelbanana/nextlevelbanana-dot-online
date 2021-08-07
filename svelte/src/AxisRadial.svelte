@@ -2,12 +2,11 @@
 	import { getContext } from 'svelte';
 
 	const { width, height, xScale, extents, config } = getContext('LayerCake');
-    console.log("here")
-
 	export let linePaddingFactor = 1.1;
 	export let labelPaddingFactor = 1.25;
+	let max;
 
-	$: max = $xScale(Math.max(...$extents.x));
+	$: max = $xScale(Math.max(...[0,5]));
 
 	$: angleSlice = (Math.PI * 2) / $config.x.length;
 
@@ -24,23 +23,48 @@
 <g
 	transform="translate({ $width / 2 }, { $height / 2 })"
 >
+
 	<circle
 		cx="0"
 		cy="0"
 		r="{max}"
-		stroke="#ccc"
+		stroke="#fff"
 		stroke-width="1"
-		fill="#CDCDCD"
-		fill-opacity="0.1"
+		fill="teal"
+	></circle>	
+	<circle
+		cx="0"
+		cy="0"
+		r="{max *.8}"
+		stroke="none"
+		stroke-width="1"
+		fill="turquoise"
 	></circle>
 	<circle
 		cx="0"
 		cy="0"
-		r="{max / 2}"
-		stroke="#ccc"
+		r="{max *.6}"
+		stroke="none"
 		stroke-width="1"
-		fill="none"
+		fill="teal"
 	></circle>
+	<circle
+		cx="0"
+		cy="0"
+		r="{max *.4}"
+		stroke="none"
+		stroke-width="1"
+		fill="turquoise"
+	></circle>
+	<circle
+		cx="0"
+		cy="0"
+		r="{max *.2}"
+		stroke="none"
+		stroke-width="1"
+		fill="teal"
+	></circle>
+	
 
 	{#each $config.x as label, i}
 		<line
@@ -53,11 +77,17 @@
 			fill="none"
 		>
 		</line>
+		
 		<text
 			text-anchor="{anchor($config.x.length, i)}"
 			dy="0.35em"
-			font-size="12px"
-			text-outline="#fff"
+			font-size="1.5rem"
+			fill="cyan"
+			class="label"
+			stroke="navy"
+			lengthAdjust="spacing"
+			textLength="30%"
+			font-family="NES2-Regular"
 			transform="translate({(max * labelPaddingFactor) * Math.cos(angleSlice * i - Math.PI / 2)}, {(max * labelPaddingFactor) * Math.sin(angleSlice * i - Math.PI / 2)})">{label}</text>
 	{/each}
 </g>

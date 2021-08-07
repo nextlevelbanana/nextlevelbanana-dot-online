@@ -2,8 +2,22 @@
 html {
 	height: 100vh;
 	font-family: 'Lato', sans-serif;
+	/* font-family: "NES2-Regular"; */
+	
+}
+@font-face {
+	font-family: 'NES2-Regular';
+	src:url('NES2-Regular.ttf.woff') format('woff'),
+		url('NES2-Regular.ttf.svg#NES2-Regular') format('svg'),
+		url('NES2-Regular.ttf.eot'),
+		url('NES2-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-	background-color: yellowgreen;
+	background-image: linear-gradient(-45deg, darkturquoise, navy);
+	margin-right: 0;
+	/* background-image:  url("assets/bg.png");
+	backgronu */
 }
