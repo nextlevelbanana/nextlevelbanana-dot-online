@@ -320,6 +320,7 @@
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/timespook-vanport",
         "img": "assets/timespook.png",
+        "wav": "assets/timespook.wav",
         "data": [
             {
                 "name": "timespook",
