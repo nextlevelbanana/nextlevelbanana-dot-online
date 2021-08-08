@@ -8,3 +8,5 @@ export const selected = writable({name: "loading", data: [{
     meat: 2,
     weird: 2
 }]});
+
+export const sortOrder = writable("default");

@@ -2,7 +2,7 @@
     let giveMeAForLoop = [1,2,3,4,5,6,7,8,9,10]
     import { selected } from './stores.js';
 
-    let difficulty;
+    let difficulty =1;
 
     $: difficulty = $selected.difficulty;
 
@@ -28,21 +28,22 @@
         border: 1px solid cyan;
         border-radius: 8px;
         background-color: RGBA(25, 25, 112, 0.5);
-        height: 6%;
+        height: 3rem;
         text-align: center;
+        
     }
 
     img {
         height: calc(100% - 16px);
         padding: 8px 2px;
     }
-    img:first-child {
+    /* img:first-child {
         padding-left: 8px;
     }
 
     img:last-child {
         padding-right: 8px;
-    }
+    } */
 
     .true {
         animation: rotation 0.8s;

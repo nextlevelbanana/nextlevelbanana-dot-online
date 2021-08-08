@@ -77,7 +77,8 @@
         "difficulty": 5,
         "description": "PIGSquad Game Funeral 2020",
         "category": "talks",
-        "link": "NEED TO UPLOAD",
+        "link": "https://vimeo.com/584405242",
+        "img": "assets/requiem.png",
         "data": [
             {
                 "name": "funeral",
@@ -337,6 +338,7 @@
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/whats-new-pussycat",
         "img": "assets/dicey.gif",
+        "wav" : "assets/dicey.ogg",
         "data": [
             {
                 "name": "whatsnew",
@@ -355,6 +357,7 @@
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/win-stupid-prizes",
         "img": "assets/wsp.gif",
+        "wav": "assets/wsp.wav",
         "data": [
             {
                 "name": "winstupidprizes",
@@ -408,7 +411,7 @@
         "description": "soundcloud + PIGSquad + streaming",
         "category": "tools",
         "link": "https://github.com/nextlevelbanana/PIGPlayer",
-        "img": "assets/",
+        "img": "assets/PIGPlayer3.png",
         "data": [
             {
                 "name": "pigplayer",
@@ -425,8 +428,8 @@
         "difficulty": 1,
         "description": "🧼",
         "category": "tools",
-        "link": "https://github.com/nextlevelbanana/ItchCleanScreen",
-        "img": "assets/",
+        "link": "https://github.com/nextlevelbanana/itchCleanScreen",
+        "img": "assets/itchcleanscreen.png",
         "data": [
             {
                 "name": "cleanscreen",
@@ -484,7 +487,7 @@
         "data": [
             {
                 "name": "rcl",
-                "CASCADIA": 0,
+                "CASCADIA": 5,
                 "MEATSPACE": 5,
                 "JOKE": 0,
                 "LINGUISTICS": 2,

@@ -1,4 +1,13 @@
-    <div class="bubble"></div><div class="bubble"></div><div class="header">nextlevelbanana.online</div><div class="bubble"></div><div class="bubble"></div>
+    <script>
+        import {sortOrder} from "./stores";
+    </script>
+    
+    <div class="bubble"></div><div class="bubble"></div><div class="header">
+        <span>nextlevelbanana.online</span>
+        {#if $sortOrder != "default"}
+        <span class="sort">{$sortOrder}</span>
+        {/if}
+    </div><div class="bubble"></div><div class="bubble"></div>
 
 <style>
     .header, .bubble {
@@ -9,6 +18,7 @@
         padding-left: 2rem;
         height: 4rem;
         margin-right: 1rem;
+        
     }
     .bubble {
         width: 1rem;
@@ -19,5 +29,13 @@
         width: calc(100% - 12rem);
         vertical-align: top;
         color: navy;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .sort {
+        color: white;
+        -webkit-text-stroke: 2px black;
+        padding-right: 1rem;
     }
 </style>

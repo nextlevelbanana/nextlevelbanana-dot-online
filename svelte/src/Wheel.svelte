@@ -1,7 +1,7 @@
 <script>
     import {flip} from "svelte/animate";
     import {fly} from "svelte/transition";
-    import { selected } from './stores.js';
+    import { selected, sortOrder } from './stores.js';
     import json from "./things.json";
     import RainbowText from "./RainbowText.svelte";
    
@@ -91,6 +91,13 @@
         displayedItems = items.slice(0,7);
     }
 
+    $: if (currentSort == allAlphaSort) {
+        $sortOrder = "ABC";
+    } else if (currentSort == difficultySort) {
+        $sortOrder = "HARD";
+    } else {
+        $sortOrder = "default";
+    }
 
     $:  $selected = displayedItems[3];
        
