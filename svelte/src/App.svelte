@@ -5,6 +5,7 @@
 	import Preview from "./Preview.svelte";
 	import {selected} from "./stores.js";
 	import FooterBar from "./FooterBar.svelte";
+	import BananaMeter from "./BananaMeter.svelte";
 
 </script>
 <HeaderBar></HeaderBar>
@@ -17,6 +18,7 @@
 		<Wheel></Wheel>
 	</div>
 </main>
+<BananaMeter></BananaMeter>
 <FooterBar></FooterBar>
 
 <style>

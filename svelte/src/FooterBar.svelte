@@ -8,7 +8,7 @@
         background-color: yellow;
         border-radius: 8px;
         display: inline-block;
-        font-size: 1.5rem; 
+        font-size: 1.75rem; 
         padding-left: 2rem;
         height: 2rem;
         margin-right: 1rem;

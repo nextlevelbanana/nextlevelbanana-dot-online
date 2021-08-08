@@ -1,5 +1,6 @@
 <script>
     import {flip} from "svelte/animate";
+    import {fly} from "svelte/transition";
     import { selected } from './stores.js';
     import json from "./things.json";
     import RainbowText from "./RainbowText.svelte";
@@ -10,23 +11,22 @@
     }
     const doRoulette = () => {
         console.log("ROULOOO")
-        const num = Math.floor(Math.random() * 50);
+        let num = Math.floor(Math.random() * 50);
         if (num < 2) num = 2;
-        // handleKeypress({keyCode:39})
         let i = 0;
         let interval = 60;
         var doRou = setInterval(() => {
             i++;
             if (i > num) window.clearInterval(doRou);
-            handleKeypress({keyCode:39})
+            handleKeypress("ArrowDown")
         }, interval );
         
     }
 
     let items = [];
 
-    items.push({
-        id: items.length,
+    const fixedItems = [{
+        id: 0,
         name: "RANDOM",
         category: "extra",
         handler: doRandom, 
@@ -38,10 +38,8 @@
             MEATSPACE: 4,
             WEIRD: 5
         }]
-    });
-
-    items.push({
-        id: items.length,
+    },{
+        id: 1,
         name: "ROULETTE",
         category: "extra",
         handler: doRoulette,
@@ -53,25 +51,49 @@
             MEATSPACE: 3,
             WEIRD: 5
         }]
-    });
+    }];
 
-    items = items.concat(json.things.sort((a,b) => {
+
+    const defaultSort = things => {
+        return things
+        .sort((a,b) => {
             if (a.category !== b.category)
                 return (a.category < b.category) ? -1 : (a.category > b.category) ? 1 : 0;
             else 
                 return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
-        }
-        ).map((thing, i) => ({...thing, id: i+2})));
+        }).map((thing, i) => ({...thing, id: i+2}));;
+    }
+
+    const allAlphaSort = things => {
+        return things.sort((a,b) => {
+            return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
+        }).map((thing, i) => ({...thing, id: i+2}));;
+    }
+
+    const difficultySort = things => {
+        return things
+        .sort((a,b) => {
+            if (a.difficulty !== b.difficulty)
+                return (a.difficulty < b.difficulty) ? -1 : (a.difficulty > b.difficulty) ? 1 : 0;
+            else 
+                return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
+        }).map((thing, i) => ({...thing, id: i+2}));;
+    }
+
+    let currentSort = defaultSort;
+    
+    const sortMethods = [defaultSort, allAlphaSort, difficultySort];
+    let displayedItems = [];
+    let currentName = "";
+
+    $: {
+        items = fixedItems.concat(currentSort(json.things));
+        displayedItems = items.slice(0,7);
+    }
 
 
-    //todo: programmatically sort things, adding IDs
-    //todo: add preview pics and sound for things
-
-
-    let displayedItems = items.slice(0,7);
-
-    $: $selected = displayedItems[3];
-
+    $:  $selected = displayedItems[3];
+       
 
     const getOffset = index => {
         const num = Math.abs(index - 3);
@@ -93,29 +115,24 @@
         }
     }
 
-    const handleKeypress = ev => {
+    const handleKeypress = key => {
         const first = displayedItems[0].id;
         
         const last = displayedItems[displayedItems.length-1].id;
 
-        switch (ev.keyCode) {
-            case 13:
-                handleClick($selected);
-                break;
-            case 39:
-            case 40:
-                displayedItems = [...displayedItems.slice(1), items[(last + 1)%items.length]];
-                break;
-            case 37:
-            case 38:
-                displayedItems.pop();
+        if (key == "ArrowRight" || key == "ArrowDown") {
+            displayedItems = [...displayedItems.slice(1), items[(last + 1)%items.length]];
+            
+        } else if (key == "ArrowLeft" || key == "ArrowUp") {
+
+            displayedItems.pop();
                 let next = first - 1;
                 if (next === -1) {
                     next = items.length-1;
                 }
-               displayedItems = [items[next],...displayedItems];
-               break;
-
+            displayedItems = [items[next],...displayedItems];
+        } else if (key == "Enter") {
+            handleClick($selected);
         }
 
     }
@@ -129,24 +146,48 @@
             item.handler();
         }
     }
+
+    let keysDown = new Set();
+
+    const handleKeydown = ev => {
+        keysDown.add(ev.key);     
+    }
+
+    const handleKeyup = ev => {
+
+        if (keysDown.has("ArrowLeft") && keysDown.has("ArrowRight") ||
+        keysDown.has("ArrowUp") && keysDown.has("ArrowDown")) {
+            currentName = $selected.name;
+            console.log(currentName)
+            currentSort = sortMethods[(sortMethods.indexOf(currentSort) + 1) % sortMethods.length];
+            keysDown.clear();
+        }
+        else if (keysDown.size) {
+            handleKeypress(ev.key)
+            keysDown.delete(ev.key);
+        }
+    }
+
 </script>
 
-<svelte:window on:keyup={handleKeypress}/>
+<svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup}/>
 
 <div class="wheel">
+    {#key currentSort}
     {#each displayedItems as item, idx (item.id)}
-        <div on:click={handleClick(item)} animate:flip="{{duration:150, ease: "sine"}}" class={ `item ${getOffset(idx)} ${item.category}`}>
-            {#if item.name == "RANDOM" || item.name == "ROULETTE"}
-                <RainbowText text={item.name} />
-            {:else}
-            <div class="name">{item.name}</div>
-            {/if}
-            {#if item.description}
-            <div class="description">{item.description}</div>
-            {/if}
-        </div>
-       
+            <div in:fly={{x: -200}} on:click={handleClick(item)} animate:flip|local="{{duration:150, ease: "sine"}}" class={ `item ${getOffset(idx)} ${item.category}`}>
+                {#if item.name == "RANDOM" || item.name == "ROULETTE"}
+                    <RainbowText text={item.name} />
+                {:else}
+                <div class="name">{item.name}</div>
+                {/if}
+                {#if item.description}
+                <div class="description">{item.description}</div>
+                {/if}
+            </div>      
     {/each}
+    {/key}
+
 </div>
 
 <style>

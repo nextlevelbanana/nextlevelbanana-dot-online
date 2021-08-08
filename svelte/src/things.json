@@ -2,6 +2,7 @@
     "things": [
         {
             "name": "TWITTER",
+            "difficulty": 3,
             "description": "@nextlevelbanana",
             "category": "socials",
             "link": "https://twitter.com/nextlevelbanana",
@@ -19,6 +20,7 @@
         },
     {
     "name": "PATREON",
+    "difficulty": 7,
     "description": "patreon.com/nextlevelbanana",
     "category": "socials",
     "link": "https://patreon.com/nextlevelbanana",
@@ -36,6 +38,7 @@
     },
     {
         "name": "ITCH",
+        "difficulty": 2,
         "description" : "nextlevelbanana.itch.io",
         "category": "socials",
         "link": "https://nextlevelbanana.itch.io",
@@ -53,9 +56,11 @@
     },
     {
         "name": "LIVE",
+        "difficulty": 8,
         "description": "nextlevelbanana.live",
         "category": "socials",
         "link": "http://nextlevelbanana.live",
+        "img": "assets/live.png",
         "data": [
             {
                 "name": "live",
@@ -69,6 +74,7 @@
     },
     {
         "name": "Requiem for a Meatgame",
+        "difficulty": 5,
         "description": "PIGSquad Game Funeral 2020",
         "category": "talks",
         "link": "NEED TO UPLOAD",
@@ -85,9 +91,11 @@
     },
     {
         "name": "Jamming in Meatspace",
+        "difficulty": 2,
         "description": "PIGSquad Talent Talks 2019",
         "category": "talks",
         "link": "https://www.youtube.com/watch?v=oBpqlPgFMmo",
+        "img": "assets/jamminginmeatspace.jpg",
         "data": [
             {
                 "name": "jammingtalk",
@@ -101,9 +109,11 @@
     },
     {
         "name": "PICO-8 Tweetcarts",
+        "difficulty": 3,
         "description": "DonutJS 2018",
         "category": "talks",
         "link": "https://www.youtube.com/watch?v=VAwY2x-nOXU",
+        "img": "assets/tweetcarts.jpg",
         "data": [
             {
                 "name": "tweetcarts",
@@ -117,9 +127,11 @@
     },
     {
         "name": "Plunge on a Dance Pad",
+        "difficulty": 5,
         "description": "PIGSquad 10yr",
         "category": "talks",
         "link": "https://www.youtube.com/watch?v=1xQ3FqIxkY8",
+        "img" :"assets/plung.jpg",
         "data": [
             {
                 "name": "plunge",
@@ -133,6 +145,7 @@
     },
     {
         "name": "Creed Fighter",
+        "difficulty": 3,
         "description": "PICO-8 Holiday Calendar 2019",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/creed-fighter",
@@ -151,6 +164,7 @@
     },
     {
         "name": "DECO-RAMA",
+        "difficulty": 1,
         "description": "ft. LIASNYDE🎨",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/deco-rama",
@@ -169,6 +183,7 @@
     },
     {
         "name": "Hack At Home",
+        "difficulty": 6,
         "description": "ft. RUUNE🎨",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/hack-at-home",
@@ -186,10 +201,11 @@
     },
     {
         "name": "Inscrutable Instructions",
+        "difficulty": 10,
         "description": "ft. PFARNACH|CASEYFRANTUM|YORIKV|APRIVEE|AYOLLAND",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/inscrutable-instructions",
-        "img": "assets/inscrutable_players_crop.jpg",
+        "img": "assets/screenie1.png",
         "wav": "assets/inscrutable.wav",
         "data": [
             {
@@ -206,6 +222,7 @@
     {
         "name": "Look Out! (The Vengabus is Coming)",
         "description": "ft. GRUBER🎵",
+        "difficulty": 1,
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/look-out-the-vengabus-is-coming",
         "img": "assets/bus_3.gif",
@@ -223,6 +240,7 @@
     },
     {
         "name": "Perfectly Normal Apartment",
+        "difficulty": 4,
         "description": "ft. HODGE🎵",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/perfectly-normal-apartment",
@@ -241,6 +259,7 @@
     },
     {
         "name": "PixelTown🎃",
+        "difficulty": 1,
         "description": "",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/pixeltown",
@@ -259,6 +278,7 @@
     },
     {
         "name": "Pourlandia2P",
+        "difficulty": 6,
         "description": "🌧🌧🌧",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/pourlandia-2p",
@@ -276,7 +296,8 @@
     },
     {
         "name": "SPES",
-        "description": "",
+        "difficulty": 7,
+        "description": "(in development)",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/spes-supraplanetary-express-system",
         "img": "assets/pilotpassport.png",
@@ -293,10 +314,11 @@
     },
     {
         "name": "Timespook: Vanport",
+        "difficulty": 4,
         "description": "ft. JONAPULSE🎙 + CASEYFRANTUM🔉 + PUMODI🎵",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/timespook-vanport",
-        "img": "assets/",
+        "img": "assets/timespook.png",
         "data": [
             {
                 "name": "timespook",
@@ -310,10 +332,11 @@
     },
     {
         "name": "What's New, Pussycat?",
+        "difficulty": 8,
         "description": "(Dicey Dungeons REMIX) ft. STEVEBLU🎵 + AIR.ARTIST🎨",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/whats-new-pussycat",
-        "img": "assets/",
+        "img": "assets/dicey.gif",
         "data": [
             {
                 "name": "whatsnew",
@@ -327,10 +350,11 @@
     },
     {
         "name": "Win Stupid Prizes",
-        "description": "",
+        "difficulty": 2,
+        "description": "ft. ACELUKE🎵",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/win-stupid-prizes",
-        "img": "assets/wsp.PNG",
+        "img": "assets/wsp.gif",
         "data": [
             {
                 "name": "winstupidprizes",
@@ -344,10 +368,11 @@
     },
     {
         "name": "Yes, Real Fire!",
-        "description": "",
+        "difficulty": 5,
+        "description": "🔥",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/yes-real-fire",
-        "img": "assets/",
+        "img": "assets/yesrealfire.jpg",
         "data": [
             {
                 "name": "winstupidprizes",
@@ -361,10 +386,11 @@
     },
     {
         "name": "Zeitgeist.PPT",
-        "description": "ft...",
+        "difficulty": 10,
+        "description": "ft. BLUECOLOSSAL🎨",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/zeitgeist",
-        "img": "assets/",
+        "img": "assets/zeitgeist.gif",
         "data": [
             {
                 "name": "zeitgeist",
@@ -378,6 +404,7 @@
     },
     {
         "name": "PIGPlayer",
+        "difficulty": 3,
         "description": "soundcloud + PIGSquad + streaming",
         "category": "tools",
         "link": "https://github.com/nextlevelbanana/PIGPlayer",
@@ -395,6 +422,7 @@
     },
     {
         "name": "Itch Clean Screen",
+        "difficulty": 1,
         "description": "🧼",
         "category": "tools",
         "link": "https://github.com/nextlevelbanana/ItchCleanScreen",
@@ -412,10 +440,11 @@
     },
     {
         "name": "PIGSquad",
+        "difficulty": 1,
         "description": "✨lead volunteer✨",
         "category": "orgs",
         "link": "https://pigsquad.com",
-        "img": "assets/",
+        "img": "assets/PIGSquad_logo_sm.png",
         "data": [
             {
                 "name": "pigsquad",
@@ -429,10 +458,11 @@
     },
     {
         "name": "Roguelike Celebration",
+        "difficulty": 1,
         "description": "@..organizer..@",
         "category": "orgs",
         "link": "https://roguelike.club",
-        "img": "assets/",
+        "img": "assets/rcl.png",
         "data": [
             {
                 "name": "rcl",
@@ -446,10 +476,11 @@
     },
     {
         "name": "DonutJS (HIATUS)",
+        "difficulty": 1,
         "description": "🍩organizer🍩",
         "category": "orgs",
-        "link": "https://roguelike.club",
-        "img": "assets/",
+        "link": "https://donutjs.club",
+        "img": "assets/donutjs.png",
         "data": [
             {
                 "name": "rcl",
