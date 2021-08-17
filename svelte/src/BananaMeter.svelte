@@ -52,11 +52,17 @@
     }
 
     @keyframes rotation {
-    from {
-        transform: rotate(0deg);
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
     }
-    to {
-        transform: rotate(359deg);
+
+    @media (max-width: 767px) and (min-height: 500px) {
+       .meter {
+			display: none;
+		}
     }
-}
 </style>

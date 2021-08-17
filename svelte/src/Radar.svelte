@@ -55,13 +55,19 @@
 
 <style>
     .chart-container {
-    width: 100%;
+    width: 90%;
     height: 52%;
+    margin: 0px auto;
   }
 
   .parent {
       height: 100%;
       width: 100%;
      
+  }
+  @media (max-height: 500px) {
+    .chart-container {
+      width: 50%;
+    }
   }
 </style>

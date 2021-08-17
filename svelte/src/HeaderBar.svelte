@@ -38,4 +38,15 @@
         -webkit-text-stroke: 2px black;
         padding-right: 1rem;
     }
+  
+
+    @media (max-height: 500px) {
+
+        .header, .bubble {
+            height: 9vh;
+            font-size: 6vh;
+            line-height: 9vh;
+        }
+
+    }
 </style>

@@ -14,4 +14,12 @@
         padding-left: 9rem;
     }
 
+    @media (max-height: 500px) {
+
+        .rainbow {
+            font-size: 6vh;
+            padding-left: 5vw;
+        }
+    }
+
 </style>

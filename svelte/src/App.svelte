@@ -9,6 +9,8 @@
 
 </script>
 <HeaderBar></HeaderBar>
+<div class="rotate"><div>(rotate your screen)</div></div>
+
 <main>
 	<div class="left">
 		<Preview bind:img={$selected.img} bind:wav={$selected.wav}></Preview>
@@ -38,6 +40,33 @@
 		flex-grow: 1;
 		height: calc(97vh - 6.5rem);
 		max-width:60%;
+	}
+
+	
+    .rotate {
+        display: none;
+    }
+
+	@media (max-width: 767px) and (min-height: 500px) {
+        .rotate {
+            display: block;
+            background-color: yellow;
+            color: navy;
+            z-index: 10;
+            border-radius: 5%;
+            padding: 5vh 0;
+            font-size: 10vh;
+        }
+
+		main {
+			display: none;
+		}
+    }
+
+	@media (max-height: 500px) {
+		.left, .right {
+			height: 78vh;
+		}
 	}
 	
 </style>

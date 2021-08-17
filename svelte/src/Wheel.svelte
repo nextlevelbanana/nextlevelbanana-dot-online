@@ -175,11 +175,31 @@
         }
     }
 
+    let touchstart;
+    const handleTouchStart = ev => {
+        touchstart = ev.touches[0].screenY.toFixed(0);
+    }
+
+    const handleTouchMove = ev => {
+        console.log(window.innerHeight)
+       let newTouch = ev.changedTouches[0].screenY.toFixed(0);
+       console.log(touchstart)
+       if (newTouch - touchstart > (window.innerHeight * 0.05)) {
+           touchstart = newTouch;
+           handleKeydown("ArrowUp");
+           handleKeyup({key: "ArrowUp"});
+       } else if (touchstart - newTouch > (window.innerHeight * 0.05)) {
+        touchstart = newTouch;
+           handleKeydown("ArrowDown");
+           handleKeyup({key: "ArrowDown"});
+       }
+    }
+
 </script>
 
-<svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup}/>
+<svelte:window on:touchstart={handleTouchStart} on:touchmove={handleTouchMove} on:keydown={handleKeydown} on:keyup={handleKeyup}/>
 
-<div class="wheel">
+<div class="wheel" >
     {#key currentSort}
     {#each displayedItems as item, idx (item.id)}
             <div in:fly={{x: -200}} on:click={handleClick(item)} animate:flip|local="{{duration:150, ease: "sine"}}" class={ `item ${getOffset(idx)} ${item.category}`}>
@@ -215,7 +235,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 3em;
+        font-size: 3rem;
+
         height: 16%;
         min-height: 16%;
         border-radius: 18px 0 0 5px;
@@ -276,6 +297,27 @@
     .three {
         margin-left: 12rem;
         filter: brightness(0.5);
+    }
+
+    @media (max-height: 500px) {
+
+        .name {
+            font-size: 5vh;
+        }
+        .description {
+            font-size: 3vh;
+        }
+
+        .name, .description {
+            padding-left: 5vw;
+        }
+
+        .zero {
+            -webkit-text-stroke: 0px white;
+            border-width: 5px 0 5px 5px;
+
+        }
+
     }
 
 </style>
