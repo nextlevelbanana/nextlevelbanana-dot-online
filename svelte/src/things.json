@@ -73,6 +73,39 @@
         ]
     },
     {
+        "name": "Rhythm Pumpkins",
+        "difficulty": 8,
+        "description": "PIGSquad Halloween Stream 2021",
+        "category": "talks",
+        "link": "https://vimeo.com/656379481",
+        "img": "assets/pumpkins.png",
+        "data": [{
+            "name": "pumpkin",
+                "CASCADIA": 5,
+                "MEATSPACE": 4,
+                "JOKE": 3,
+                "LINGUISTICS": 0,
+                "WEIRD": 4
+        }
+        ]
+    },
+    {
+        "name": "Brogue on a Dance Mat",
+        "difficulty": 10,
+        "description": "Roguelike Celebration 2021",
+        "category": "talks",
+        "link": "https://www.youtube.com/watch?v=zlJNIJOog9M",
+        "img": "assets/broguethumbnail.jpg",
+        "data": [{
+            "name": "brogue",
+            "CASCADIA": 0,
+            "MEATSPACE": 4,
+            "JOKE": 4,
+            "LINGUISTICS": 0,
+            "WEIRD": 3
+        }]
+    },
+    {
         "name": "Requiem for a Meatgame",
         "difficulty": 5,
         "description": "PIGSquad Game Funeral 2020",
@@ -162,6 +195,22 @@
                 "WEIRD": 1
             }
         ]
+    },
+    {
+        "name": "darkweb.lol",
+        "difficulty": 5,
+        "description": "(in development)",
+        "category": "games",
+        "link": "https://darkweb.lol",
+        "img": "assets/darkwebdotlol.PNG",
+        "data": [{
+            "name": "darkweb",
+            "CASCADIA": 0,
+            "MEATSPACE": 1,
+            "JOKE": 3,
+            "LINGUISTICS": 1,
+            "WEIRD": 3
+        }]
     },
     {
         "name": "DECO-RAMA",
