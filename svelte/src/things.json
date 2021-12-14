@@ -90,6 +90,22 @@
         ]
     },
     {
+        "name": "Game Sommelier 🎃",
+        "difficulty": 5,
+        "description": "PIGSquad Halloween Stream 2021",
+        "category": "talks",
+        "link": "https://vimeo.com/656389584",
+        "img":"assets/halsom.png",
+        "data": [{
+            "name": "halsomm",
+            "CASCADIA": 3,
+            "MEATSPACE": 5,
+            "JOKE": 5,
+            "LINGUISTICS": 0,
+            "WEIRD": 3
+        }]
+    },
+    {
         "name": "Brogue on a Dance Mat",
         "difficulty": 10,
         "description": "Roguelike Celebration 2021",
