@@ -82,10 +82,10 @@
         "data": [{
             "name": "dracula",
                 "CASCADIA": 1,
-                "MEATSPACE": 6,
-                "JOKE": 4,
+                "MEATSPACE": 3,
+                "JOKE": 1,
                 "LINGUISTICS": 0,
-                "WEIRD": 2
+                "WEIRD": 1
         }
         ]
     },
@@ -223,9 +223,9 @@
                 "name": "avendge",
                 "CASCADIA": 0,
                 "MEATSPACE": 0,
-                "JOKE": 2,
-                "LINGUISTICS": 4,
-                "WEIRD": 3
+                "JOKE": 1,
+                "LINGUISTICS": 2,
+                "WEIRD": 1
             }
         ]
     },
@@ -239,11 +239,11 @@
         "data": [
             {
                 "name": "dreamsurvey",
-                "CASCADIA": 10,
-                "MEATSPACE": 8,
-                "JOKE": 10,
-                "LINGUISTICS": 1,
-                "WEIRD": 8
+                "CASCADIA": 5,
+                "MEATSPACE": 5,
+                "JOKE": 4,
+                "LINGUISTICS": 0,
+                "WEIRD": 5
             }
         ]
     },
