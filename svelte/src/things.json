@@ -1,15 +1,15 @@
 {
     "things": [
         {
-            "name": "TWITTER",
+            "name": "MASTODON",
             "difficulty": 3,
-            "description": "@nextlevelbanana",
+            "description": "@qristy@xoxo.zone",
             "category": "socials",
-            "link": "https://twitter.com/nextlevelbanana",
+            "link": "https://xoxo.zone/@qristy",
             "img": "assets/unicorn.jpg",
             "data": [
                 {
-                    "name": "twitter",
+                    "name": "mastodon",
                     "CASCADIA": 3,
                     "MEATSPACE": 3,
                     "JOKE": 3,
@@ -70,6 +70,23 @@
                 "LINGUISTICS": 1,
                 "WEIRD": 4
             }
+        ]
+    },
+    {
+        "name": "Steal from Dracula",
+        "difficulty": 6,
+        "description": "PIGSquad Spooky Stream 2022",
+        "category": "talks",
+        "link": "https://vimeo.com/manage/videos/805743301",
+        "img": "assets/stealfromdracula.png",
+        "data": [{
+            "name": "dracula",
+                "CASCADIA": 1,
+                "MEATSPACE": 6,
+                "JOKE": 4,
+                "LINGUISTICS": 0,
+                "WEIRD": 2
+        }
         ]
     },
     {
@@ -194,6 +211,43 @@
         ]
     },
     {
+        "name": "AVENdGE ME",
+        "difficulty": 7,
+        "description": "ft. Peter Karman🎵",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/avendge-me",
+        "img": "assets/avendgeme.png",
+        "wav": "assets/avendgeme.mp3",
+        "data": [
+            {
+                "name": "avendge",
+                "CASCADIA": 0,
+                "MEATSPACE": 0,
+                "JOKE": 2,
+                "LINGUISTICS": 4,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Central Cascadian Dream Survey",
+        "difficulty": 5,
+        "description": "a playable phone tree",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/central-cascadian-dream-suvery",
+        "img": "assets/dreamsurvey.jpg",
+        "data": [
+            {
+                "name": "dreamsurvey",
+                "CASCADIA": 10,
+                "MEATSPACE": 8,
+                "JOKE": 10,
+                "LINGUISTICS": 1,
+                "WEIRD": 8
+            }
+        ]
+    },
+    {
         "name": "Creed Fighter",
         "difficulty": 3,
         "description": "PICO-8 Holiday Calendar 2019",
@@ -244,6 +298,24 @@
                 "JOKE": 2,
                 "LINGUISTICS": 0,
                 "WEIRD": 2
+            }
+        ]
+    },
+    {
+        "name": "The Free Pile",
+        "difficulty": 1,
+        "description": "(an escape room)",
+        "category": "games",
+        "link": "https://nextlevelbanana.live/the-free-pile.html",
+        "img": "assets/freepile.jpg",
+        "data": [
+            {
+                "name": "freepile",
+                "CASCADIA": 3,
+                "MEATSPACE": 10,
+                "JOKE": 2,
+                "LINGUISTICS": 1,
+                "WEIRD": 4
             }
         ]
     },
@@ -510,7 +582,7 @@
     {
         "name": "PIGSquad",
         "difficulty": 1,
-        "description": "✨lead volunteer✨",
+        "description": "✨board member✨",
         "category": "orgs",
         "link": "https://pigsquad.com",
         "img": "assets/PIGSquad_logo_sm.png",
@@ -536,24 +608,6 @@
             {
                 "name": "rcl",
                 "CASCADIA": 0,
-                "MEATSPACE": 5,
-                "JOKE": 0,
-                "LINGUISTICS": 2,
-                "WEIRD": 1
-            }
-        ]
-    },
-    {
-        "name": "DonutJS (HIATUS)",
-        "difficulty": 1,
-        "description": "🍩organizer🍩",
-        "category": "orgs",
-        "link": "https://donutjs.club",
-        "img": "assets/donutjs.png",
-        "data": [
-            {
-                "name": "rcl",
-                "CASCADIA": 5,
                 "MEATSPACE": 5,
                 "JOKE": 0,
                 "LINGUISTICS": 2,
