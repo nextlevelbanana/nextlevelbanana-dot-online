@@ -55,15 +55,16 @@
 
 <style>
     .chart-container {
-    width: 90%;
-    height: 52%;
-    margin: 0px auto;
+      width: 100%;
+      height: 52%;
+      margin: auto auto;
   }
 
   .parent {
-      height: 100%;
-      width: 100%;
-     
+      height: 75%;
+      width: 95%;
+      padding-top: 20%;
+      margin: auto;
   }
   @media (max-height: 500px) {
     .chart-container {

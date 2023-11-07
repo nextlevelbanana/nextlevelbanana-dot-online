@@ -1,27 +1,34 @@
-<div class="footer">
-    <div>Allow autoplay for best experience!</div>
-    <div class="desktop">⬅ ➡ or ⬆ ⬇ and [enter]</div>
-</div>
+<footer>
+    <div class="footer-text">
+        <div>Allow autoplay for best experience!</div>
+        <div class="desktop">⬅ ➡ or ⬆ ⬇ and [enter]</div>
+    </div>
+</footer>
 
 <style>
-    .footer {
-        background-color: yellow;
+    footer {
+        background-color: #ffdd22;
         border-radius: 8px;
-        display: inline-block;
-        font-size: 1.75rem; 
-        padding-left: 2rem;
-        height: 2rem;
-        margin-right: 1rem;
-        width: 97%;
-        vertical-align: top;
-        color: white;
-        -webkit-text-stroke: 1px black;
-        display: flex;
-        justify-content: space-around;
+        margin: 0 auto 0.5rem;
+        color: navy;
+        height: 3rem;
+        font-size: 1.5rem; 
+        width: calc(100% - 1rem);
+        position: fixed;
+        left: 0.5rem;
+        bottom: 0.25rem;
+    }
+    
+    .footer-text {
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 0.5rem;
+        width: calc(100% - 1rem);
+        max-width: 100%;
     }
 
     @media (max-width: 767px) and (min-height: 500px) {
-       .footer {
+       footer {
 			display: none;
 		}
     }
@@ -31,11 +38,12 @@
         .desktop {
             display: none;
         }
-        .footer {
+        /* footer {
             height: 9vh;
             font-size: 6vh;
             line-height: 9vh;
-            width: 94%;
-        }
+            margin: 0 1rem 0.5rem 1rem;
+            padding: 0 0.5rem;
+        } */
     }   
 </style>

@@ -1,36 +1,48 @@
     <script>
         import {sortOrder} from "./stores";
     </script>
-    
-    <div class="bubble"></div><div class="bubble"></div><div class="header">
-        <span>nextlevelbanana.online</span>
-        {#if $sortOrder != "default"}
-        <span class="sort">{$sortOrder}</span>
-        {/if}
-    </div><div class="bubble"></div><div class="bubble"></div>
+    <header>
+        <div class="bubble"></div><div class="bubble2"></div><div class="header">
+            <span>nextlevelbanana.online</span>
+            {#if $sortOrder != "default"}
+            <span class="sort">{$sortOrder}</span>
+            {/if}
+        </div><div class="bubble2"></div><div class="bubble"></div>
+    </header>
 
 <style>
-    .header, .bubble {
-        background-color: yellow;
+    header {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0.25rem;   
+        position: fixed;
+        top: 0.25rem;
+        z-index: 30;
+    }
+    .header, .bubble, .bubble2 {
+        background-color: #ffdd22;
             border-radius: 8px;
             display: inline-block;
         font-size: 3rem; 
-        padding-left: 2rem;
         height: 4rem;
-        margin-right: 1rem;
-        
+        margin-right: 1rem;        
     }
-    .bubble {
+    .bubble, .bubble2 {
         width: 1rem;
         padding: 0;
     }
+    
+    .bubble:first-child {
+        margin-left: 1rem;
+    }
 
     .header {
-        width: calc(100% - 12rem);
-        vertical-align: top;
+        flex-grow: 1;
         color: navy;
         display: inline-flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
     }
 
     .sort {
@@ -41,12 +53,32 @@
   
 
     @media (max-height: 500px) {
-
-        .header, .bubble {
+        .header, .bubble, .bubble2 {
             height: 9vh;
-            font-size: 6vh;
+            font-size: 2rem;
             line-height: 9vh;
         }
-
+    }
+    
+    @media (max-width: 767px) and (min-height: 500px) {
+        .header {
+            font-size: 2rem;
+            align-items: center;
+            word-break: break-all;
+        }
+        .bubble2 {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 430px) {
+        .header {
+            font-size: 1.5rem;
+            align-items: center;
+            word-break: break-all;
+        }
+        .bubble2 {
+            display: none;
+        }
     }
 </style>

@@ -10,7 +10,6 @@
         handleClick(items[idx]);
     }
     const doRoulette = () => {
-        console.log("ROULOOO")
         let num = Math.floor(Math.random() * 50);
         if (num < 2) num = 2;
         let i = 0;
@@ -165,7 +164,6 @@
         if (keysDown.has("ArrowLeft") && keysDown.has("ArrowRight") ||
         keysDown.has("ArrowUp") && keysDown.has("ArrowDown")) {
             currentName = $selected.name;
-            console.log(currentName)
             currentSort = sortMethods[(sortMethods.indexOf(currentSort) + 1) % sortMethods.length];
             keysDown.clear();
         }
@@ -228,7 +226,7 @@
    
     .item {
         align-items: flex-start;
-        background: linear-gradient(65deg, teal 30%, cyan);
+        background: linear-gradient(65deg, teal 50%, #00aaaa);
         border: 2px solid chartreuse;
         border-bottom-color: lime;
         border-right: 0;
@@ -247,7 +245,7 @@
     }
 
     .description {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .item.zero:hover {
@@ -255,17 +253,17 @@
     }
 
     .name, .description {
-        padding-left: 9rem;
+        padding-left: 5rem;
     }
 
     .games {
         color: chartreuse;
     }
     .talks {
-        color: red;
+        color: orange;
     }
     .socials {
-        color: yellow;
+        color: #ffdd22;
     }
     .extra {
         color: transparent;
@@ -284,11 +282,18 @@
         border-bottom-color: lime;
         border-width: 10px 0 10px 10px;
         filter: brightness(1.0);
-        -webkit-text-stroke: 1px white;
+        text-shadow: 0 0 10px navy;
+    }
+    .zero .description {
+        -webkit-text-stroke: 0;
+        letter-spacing: 0.1em;
     }
     .one {
         margin-left: 4rem;
         filter: brightness(0.9);
+    }
+    .one .description{
+        display: none;
     }
     .two {
         margin-left: 8rem;

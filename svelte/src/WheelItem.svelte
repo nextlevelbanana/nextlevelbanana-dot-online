@@ -9,7 +9,7 @@
 
 <style>
     .item {
-        background: linear-gradient(65deg, yellow, yellowgreen);
+        background: linear-gradient(65deg, #ffdd22, yellowgreen);
         border:1px solid red;
         height: 100%;
         min-height: 100%;

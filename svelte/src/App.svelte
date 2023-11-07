@@ -30,16 +30,15 @@
 		overflow: hidden;
 	}
 	.left {
-		/* border: 1px solid lime; */
 		flex-grow: 1;
 		max-width: 40%;
+		margin-top: 5rem;
 		height: calc(97vh - 6.5rem);
 	}
 	.right {
-		/* border: 1px solid blueviolet; */
 		flex-grow: 1;
-		height: calc(97vh - 6.5rem);
 		max-width:60%;
+		height: 100vh;
 	}
 
 	
@@ -50,12 +49,14 @@
 	@media (max-width: 767px) and (min-height: 500px) {
         .rotate {
             display: block;
-            background-color: yellow;
+            background-color: #ffdd22;
+			border-radius: 8px;
             color: navy;
             z-index: 10;
-            border-radius: 5%;
-            padding: 5vh 0;
-            font-size: 10vh;
+            margin: 1rem;
+			padding: 0.5rem;
+            font-size: 2rem;
+			text-align: center;
         }
 
 		main {
