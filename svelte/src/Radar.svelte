@@ -5,8 +5,7 @@
     import Radar from './RadarChart.svelte';
     import AxisRadial from './AxisRadial.svelte';
 
-    // const seriesKey = 'name';
-    const xKey = [  "WEIRD", "MEATSPACE", "CASCADIA", "LINGUISTICS","JOKE"];
+    const xKey = [  "WEIRD", "IRL", "PNW", "LANG","JOKE"];
     let data;
 
     $: {
@@ -66,9 +65,12 @@
       padding-top: 20%;
       margin: auto;
   }
-  @media (max-height: 500px) {
+  @media (max-height: 550px) {
+    .parent {
+      padding-top: 15%;
+    }
     .chart-container {
-      width: 50%;
+      width: 120%;
     }
   }
 </style>

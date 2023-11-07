@@ -26,7 +26,6 @@
 <style>
 	main {
 		display: flex;
-		/* //justify-content: space-between; */
 		overflow: hidden;
 	}
 	.left {
@@ -40,13 +39,12 @@
 		max-width:60%;
 		height: 100vh;
 	}
-
 	
     .rotate {
         display: none;
     }
 
-	@media (max-width: 767px) and (min-height: 500px) {
+	@media (max-width: 767px) and (min-height: 550px) {
         .rotate {
             display: block;
             background-color: #ffdd22;
@@ -54,6 +52,7 @@
             color: navy;
             z-index: 10;
             margin: 1rem;
+			margin-top: 5rem;
 			padding: 0.5rem;
             font-size: 2rem;
 			text-align: center;
@@ -63,10 +62,10 @@
 			display: none;
 		}
     }
-
-	@media (max-height: 500px) {
-		.left, .right {
-			height: 78vh;
+	
+	@media (max-height: 550px) {
+		.left {
+			margin-top: 4rem;
 		}
 	}
 	

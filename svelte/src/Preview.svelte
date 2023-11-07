@@ -35,7 +35,7 @@
         background-size: cover;
     }
 
-    @media (max-height: 500px) {
+    @media (max-height: 550px) {
         .box {
             border-top: 5px solid cyan;
         }

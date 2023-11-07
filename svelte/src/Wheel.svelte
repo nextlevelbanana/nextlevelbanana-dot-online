@@ -32,9 +32,9 @@
         data: [{
             name: "random",
             JOKE: 2,
-            CASCADIA: 1,
-            LINGUISTICS: 3,
-            MEATSPACE: 4,
+            PNW: 1,
+            LANG: 3,
+            IRL: 4,
             WEIRD: 5
         }]
     },{
@@ -45,9 +45,9 @@
         data: [{
             name: "roulette",
             JOKE: 5,
-            CASCADIA: 3,
-            LINGUISTICS: 3,
-            MEATSPACE: 3,
+            PNW: 3,
+            LANG: 3,
+            IRL: 3,
             WEIRD: 5
         }]
     }];
@@ -179,9 +179,7 @@
     }
 
     const handleTouchMove = ev => {
-        console.log(window.innerHeight)
        let newTouch = ev.changedTouches[0].screenY.toFixed(0);
-       console.log(touchstart)
        if (newTouch - touchstart > (window.innerHeight * 0.05)) {
            touchstart = newTouch;
            handleKeydown("ArrowUp");
@@ -304,17 +302,16 @@
         filter: brightness(0.5);
     }
 
-    @media (max-height: 500px) {
-
+    @media (max-height: 550px) {
         .name {
-            font-size: 5vh;
+            font-size: 1.5rem;
         }
         .description {
-            font-size: 3vh;
+            font-size: 0.75rem;
         }
 
         .name, .description {
-            padding-left: 5vw;
+            padding-left: 3rem;
         }
 
         .zero {

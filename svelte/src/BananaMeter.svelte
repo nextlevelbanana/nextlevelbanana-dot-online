@@ -60,9 +60,16 @@
         }
     }
 
-    @media (max-width: 767px) and (min-height: 500px) {
+    @media (max-width: 767px) and (min-height: 550px) {
        .meter {
 			display: none;
 		}
+    }
+    
+    @media (max-height: 550px) {
+        .meter {
+            height: 2.5rem;
+            padding: 0 0.5rem;
+        }
     }
 </style>

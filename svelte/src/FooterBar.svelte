@@ -27,23 +27,25 @@
         max-width: 100%;
     }
 
-    @media (max-width: 767px) and (min-height: 500px) {
+    @media (max-width: 767px) and (min-height: 550px) {
        footer {
 			display: none;
 		}
     }
-
-    @media (max-height: 500px) {
-
-        .desktop {
-            display: none;
+    
+    @media (max-height: 550px) {
+        footer{
+            font-size: 0.75rem;
+            height: 1rem;
+            margin: 0 auto 0.125rem;
         }
-        /* footer {
-            height: 9vh;
-            font-size: 6vh;
-            line-height: 9vh;
-            margin: 0 1rem 0.5rem 1rem;
-            padding: 0 0.5rem;
-        } */
-    }   
+        
+        .footer-text {
+            margin-top: 0;
+        }
+        
+        .desktop {
+            display: none; /* at this height they're probably on a touchscreen*/
+        }
+    }
 </style>

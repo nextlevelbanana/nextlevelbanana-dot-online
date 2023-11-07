@@ -14,7 +14,7 @@
         padding-left: 9rem;
     }
 
-    @media (max-height: 500px) {
+    @media (max-height: 550px) {
 
         .rainbow {
             font-size: 6vh;

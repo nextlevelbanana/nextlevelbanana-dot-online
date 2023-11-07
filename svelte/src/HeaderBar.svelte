@@ -52,7 +52,7 @@
     }
   
 
-    @media (max-height: 500px) {
+    @media (max-height: 550px) {
         .header, .bubble, .bubble2 {
             height: 9vh;
             font-size: 2rem;
@@ -60,7 +60,7 @@
         }
     }
     
-    @media (max-width: 767px) and (min-height: 500px) {
+    @media (max-width: 767px) and (min-height: 550px) {
         .header {
             font-size: 2rem;
             align-items: center;
