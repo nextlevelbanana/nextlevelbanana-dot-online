@@ -73,6 +73,24 @@
         ]
     },
     {
+      "name": "Rhythm Pumpkins 2023",
+      "difficulty": 7,
+      "description": "PIGSquad Spooky Stream 2023",
+      "category": "talks",
+      "link": "https://vimeo.com/878910705/ee4a9be106",
+      "img": "assets/pumpkins2023.png",
+      "data": [
+        {
+            "name": "pumpkins2023",
+            "PNW": 2,
+            "IRL": 4,
+            "JOKE": 3,
+            "LANG": 0,
+            "WEIRD": 3
+        }
+      ]  
+    },
+    {
         "name": "Steal from Dracula",
         "difficulty": 6,
         "description": "PIGSquad Spooky Stream 2022",
@@ -157,12 +175,12 @@
         ]
     },
     {
-        "name": "Jamming in IRL",
+        "name": "Jamming in Meatspace",
         "difficulty": 2,
         "description": "PIGSquad Talent Talks 2019",
         "category": "talks",
         "link": "https://www.youtube.com/watch?v=oBpqlPgFMmo",
-        "img": "assets/jamminginIRL.jpg",
+        "img": "assets/jamminginMeatspace.jpg",
         "data": [
             {
                 "name": "jammingtalk",
@@ -216,7 +234,7 @@
         "description": "ft. Peter Karman🎵",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/avendge-me",
-        "img": "assets/avendgeme.png",
+        "img": "assets/avendgeme.jpg",
         "wav": "assets/avendgeme.mp3",
         "data": [
             {
@@ -226,6 +244,41 @@
                 "JOKE": 1,
                 "LANG": 2,
                 "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "Bitsylike",
+        "difficulty": 2,
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/bitsylike",
+        "img": "assets/bitsylike.gif",
+        "data": [
+            {
+                "name": "bitsylike",
+                "PNW": 1,
+                "IRL": 1,
+                "JOKE": 2,
+                "LANG": 1,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
+        "name": "Boop! That! Chicken!",
+        "difficulty": 5,
+        "description": "ft. AIR.ARTIST 🎨",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/boop-that-chicken",
+        "img": "assets/boop-that-chicken.jpg",
+        "data": [
+            {
+                "name": "boopthatchicken",
+                "PNW": 1,
+                "IRL": 5,
+                "JOKE": 4,
+                "LANG": 0,
+                "WEIRD": 3
             }
         ]
     },
@@ -297,6 +350,23 @@
                 "IRL": 0,
                 "JOKE": 2,
                 "LANG": 0,
+                "WEIRD": 2
+            }
+        ]
+    }, {
+        "name": "Go Fish 2: Fish if True",
+        "difficulty": 7,
+        "description": "playing cards + boolean logic",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/go-fish-2",
+        "img": "assets/gofish2.png",
+        "data": [
+            {
+                "name": "gofish2",
+                "PNW": 1,
+                "IRL": 5,
+                "JOKE": 2,
+                "LANG": 3,
                 "WEIRD": 2
             }
         ]
@@ -377,6 +447,24 @@
         ]
     },
     {
+        "name": "Oscacomp's Item Shop",
+        "difficulty": 2,
+        "description": "ft. HARKFORSOOTH 🎨",
+        "category": "games",
+        "link": "https://nextlevelbanana.live/oscacomp",
+        "img": "assets/oscacomp.jpg",
+        "data": [
+            {
+                "name": "oscacomp",
+                "PNW": 1,
+                "IRL": 5,
+                "JOKE": 2,
+                "LANG": 5,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
         "name": "Perfectly Normal Apartment",
         "difficulty": 4,
         "description": "ft. HODGE🎵",
@@ -410,6 +498,25 @@
                 "IRL": 0,
                 "JOKE": 2,
                 "LANG": 0,
+                "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Plant Budz '98",
+        "difficulty": 3,
+        "description": "ft. JIRAPHER ⌨️ | THOMASOHASHI 🎨 | SYNTOCA 🎵",
+        "category": "games",
+        "link": "https://jirapher.itch.io/plant-budz-98",
+        "img": "assets/plant-budz.jpg",
+        "wav": "assets/plantbudz.wav",
+        "data": [
+            {
+                "name": "plantbudz",
+                "PNW": 1,
+                "IRL": 1,
+                "JOKE": 4,
+                "LANG": 1,
                 "WEIRD": 3
             }
         ]
@@ -453,7 +560,7 @@
     {
         "name": "Timespook: Vanport",
         "difficulty": 4,
-        "description": "ft. JONAPULSE🎙 + CASEYFRANTUM🔉 + PUMODI🎵",
+        "description": "ft. JONAPULSE🎙 | CASEYFRANTUM🔉 | PUMODI🎵",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/timespook-vanport",
         "img": "assets/timespook.png",
@@ -472,7 +579,7 @@
     {
         "name": "What's New, Pussycat?",
         "difficulty": 8,
-        "description": "(Dicey Dungeons REMIX) ft. STEVEBLU🎵 + AIR.ARTIST🎨",
+        "description": "(Dicey Dungeons REMIX) ft. STEVEBLU🎵 | AIR.ARTIST🎨",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/whats-new-pussycat",
         "img": "assets/dicey.gif",
@@ -494,7 +601,6 @@
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/win-stupid-prizes",
         "img": "assets/wsp.gif",
-        "wav": "assets/wsp.wav",
         "data": [
             {
                 "name": "winstupidprizes",
@@ -527,7 +633,7 @@
     {
         "name": "Zeitgeist.PPT",
         "difficulty": 10,
-        "description": "ft. BLUECOLOSSAL🎨",
+        "description": "ft. BLUECOLOSSAL🎨 | JONAPULSE 🎙️ | RIZZO 🎙️",
         "category": "games",
         "link": "https://nextlevelbanana.itch.io/zeitgeist",
         "img": "assets/zeitgeist.gif",
@@ -539,6 +645,24 @@
                 "JOKE": 2,
                 "LANG": 0,
                 "WEIRD": 5
+            }
+        ]
+    },
+    {
+        "name": "Zero Hour Peggle",
+        "difficulty": 9,
+        "description": "0h game jam 2023",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/zero-hour-peggle",
+        "img": "assets/zero-hour-peggle.png",
+        "data": [
+            {
+                "name": "zerohourpeggle",
+                "PNW": 0,
+                "IRL": 1,
+                "JOKE": 4,
+                "LANG": 0,
+                "WEIRD": 0
             }
         ]
     },
