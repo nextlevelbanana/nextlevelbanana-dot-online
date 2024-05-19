@@ -390,6 +390,25 @@
         ]
     },
     {
+        "name": "Guess Hue!",
+        "difficulty": 4,
+        "description": "ft. HODGE🎵 | Dizzyandlost ✏️ | Ragonia 🎨",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/guess-hue",
+        "img": "assets/guess-hue.jpg",
+        "wav": "assets/guesshue.ogg",
+        "data": [
+            {
+                "name": "guesshue",
+                "PNW": 2,
+                "IRL": 4,
+                "JOKE": 3,
+                "LANG": 4,
+                "WEIRD": 1
+            }
+        ]
+    },
+    {
         "name": "Hack At Home",
         "difficulty": 6,
         "description": "ft. RUUNE🎨",
@@ -554,6 +573,24 @@
                 "JOKE": 1,
                 "LANG": 0,
                 "WEIRD": 3
+            }
+        ]
+    },
+    {
+        "name": "Sticky Boys",
+        "difficulty": 7,
+        "description": "a warglobbing system",
+        "category": "games",
+        "link": "https://nextlevelbanana.itch.io/sticky-boys-a-warglobbing-system",
+        "img": "assets/sticky.jpg",
+        "data": [
+            {
+                "name": "sticky",
+                "PNW": 0,
+                "IRL": 5,
+                "JOKE": 3,
+                "LANG": 0,
+                "WEIRD": 2
             }
         ]
     },
